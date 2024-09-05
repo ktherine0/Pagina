@@ -3,89 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Básica</title>
-    <!-- Incluye la fuente Montserrat desde Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <title>Documento PDF</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
+        /* Opcional: Estilos para ajustar el tamaño del embed */
+        embed {
+            width: 100%;
+            height: 100vh;
         }
-        .franja {
-            background-color: #b4c451;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            text-transform: uppercase; /* Convierte el texto a mayúsculas */
-            font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
-            font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
-            font-weight: 700; /* Aplica un peso de fuente en negrita */
-        }
-        .contenido {
-            display: flex;
-            flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .texto {
-            width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
-            max-width: 600px;
-            text-align: center; /* Centra el texto para mejor visualización */
-        }
-        .contenido img {
-            max-width: 100%; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
-            height: auto; /* Mantiene la proporción de la imagen */
-            margin-top: 20px;
-        }
-        .download-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .download-link {
-            display: inline-block;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: #fff;
-            background-color: #b4c451;
-            font-size: 16px;
-            font-weight: bold;
-            border: 1px solid #b4c451;
-            border-radius: 3px;
-            margin-bottom: 20px; /* Margen debajo del botón para separar del texto */
-        }
-        .download-link:hover {
-            background-color: #9aab4b; /* Cambia el color de fondo al pasar el cursor */
-            border-color: #9aab4b; /* Cambia el color del borde al pasar el cursor */
-        }
-
-
     </style>
 </head>
 <body>
-    <div class="franja">
-        Catoni Alcalde Ñiquén
-    </div>
-
-    <div class="download-container">
-        <a href="Programa_Catoni.pdf" download="Programa_Catoni.pdf" class="download-link">Pincha aquí para descargar el programa</a>
-    </div>
-
-    <div class="contenido">
-        <div class="texto">
-            <img src="Imagen.png" alt="Imagen de Mauricio Catoni">
-            <p>Desde niño, Mauricio Catoni Contreras, forma parte de la comunidad San Gregoriana, 
-                nieto de don Segundo Contreras y la Sra. Crispina Abarzúa, que desde el año de 1920, 
-                residieron en Ñiquén. Hijo de la Sra. Eva Contreras, nacida y criada en San Gregorio, 
-                y Don Jorge Catoni, quien reside en el sector de Paque Norte. Sobrino de la Señorita 
-                Isolina Contreras, Señora Juanita Figueroa y la Señora Rosa Contreras, mujeres que 
-                en vida fueron un gran aporte a nuestra comunidad.</p>
-        </div>
-    </div>
-
-    <div class="franja">
-        Todos por el cambio
-    </div>
+    <embed src="Programa_Catoni.pdf" type="application/pdf" />
 </body>
 </html>
 

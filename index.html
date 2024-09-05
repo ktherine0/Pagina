@@ -23,19 +23,20 @@
         }
         .contenido {
             display: flex;
-            align-items: flex-start;
+            flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+            align-items: center;
             justify-content: center;
             padding: 20px;
         }
         .texto {
-            width: 50%;
+            width: 100%; /* Ajusta el ancho al 100% en pantallas pequeñas */
             max-width: 600px;
-            text-align: justify;
+            text-align: center; /* Centra el texto para mejor visualización */
         }
         .contenido img {
+            max-width: 100%; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
             margin-top: 20px;
-            max-width: 100%; /* Ajusta para que la imagen no se desborde */
-            height: auto;
         }
         .download-container {
             text-align: center;
@@ -54,8 +55,25 @@
             margin-bottom: 20px; /* Margen debajo del botón para separar del texto */
         }
         .download-link:hover {
-            background-color: #b4c451;
-            border-color: #b4c451;
+            background-color: #9aab4b; /* Cambia el color de fondo al pasar el cursor */
+            border-color: #9aab4b; /* Cambia el color del borde al pasar el cursor */
+        }
+
+        /* Consultas de medios para dispositivos móviles */
+        @media (max-width: 768px) {
+            .franja {
+                font-size: 20px; /* Ajusta el tamaño de la fuente en pantallas más pequeñas */
+            }
+            .download-link {
+                font-size: 14px; /* Ajusta el tamaño del texto del botón */
+                padding: 8px 16px; /* Ajusta el padding del botón */
+            }
+            .texto {
+                width: 90%; /* Ajusta el ancho del contenedor del texto en pantallas pequeñas */
+            }
+            .contenido {
+                padding: 10px; /* Ajusta el padding del contenedor en pantallas pequeñas */
+            }
         }
     </style>
 </head>
@@ -79,6 +97,7 @@
     </div>
 </body>
 </html>
+
 
 
 

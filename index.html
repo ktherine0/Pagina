@@ -3,46 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa Catoni</title>
+    <title>Página Básica</title>
+    <!-- Incluye la fuente Montserrat desde Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
         }
-        
+        .franja {
+            background-color: #b4c451;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-transform: uppercase; /* Convierte el texto a mayúsculas */
+            font-family: 'Montserrat', sans-serif; /* Aplica la fuente Montserrat */
+            font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+            font-weight: 700; /* Aplica un peso de fuente en negrita */
+        }
+        .contenido {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 20px;
+        }
+        .texto {
+            width: 50%;
+            max-width: 600px;
+            text-align: justify;
+        }
+        .contenido img {
+            margin-top: 20px;
+            max-width: 100%; /* Ajusta para que la imagen no se desborde */
+            height: auto;
+        }
+        .download-container {
+            text-align: center;
+            margin-top: 20px;
+        }
         .download-link {
             display: inline-block;
-            padding: 5px 10px;
+            padding: 10px 20px;
             text-decoration: none;
-            color: #007bff;
+            color: #fff;
+            background-color: #b4c451;
             font-size: 16px;
             font-weight: bold;
-            border: 1px solid #007bff;
+            border: 1px solid #b4c451;
             border-radius: 3px;
             margin-bottom: 20px; /* Margen debajo del botón para separar del texto */
         }
         .download-link:hover {
-            color: white;
-            background-color: #007bff;
-            border-color: #007bff;
-        }
-        .footer-text {
-            font-size: 18px;
-            color: #333;
-            margin-top: 20px;
+            background-color: #b4c451;
+            border-color: #b4c451;
         }
         .logo {
-            margin-top: 30px; /* Espacio arriba del logo */
+            margin: 20px auto; /* Centra el logo horizontalmente y agrega margen superior e inferior */
             max-width: 300px; /* Ajusta el tamaño máximo del logo */
         }
     </style>
 </head>
 <body>
-    <img src="logo2.png" alt="Logo" class="logo">
-    <p class="footer-text"></p>
-    <a href="Programa_Catoni.pdf" download="Programa_Catoni.pdf" class="download-link">Pincha aquí para descargar el programa</a>
-    <p class="footer-text"></p>
+    <div class="franja">
+        Catoni Alcalde Ñiquén
+    </div>
+
+    <div class="download-container">
+        <a href="Programa_Catoni.pdf" download="Programa_Catoni.pdf" class="download-link">Pincha aquí para descargar el programa</a>
+    </div>
+
+    <div class="contenido">
+        <div class="texto">
+            <img src="imagen.png" alt="Imagen de Mauricio Catoni">
+            <p>Desde niño, Mauricio Catoni Contreras, forma parte de la comunidad San Gregoriana, 
+                nieto de don Segundo Contreras y la Sra. Crispina Abarzúa, que desde el año de 1920, 
+                residieron en Ñiquén. Hijo de la Sra. Eva Contreras, nacida y criada en San Gregorio, 
+                y Don Jorge Catoni, quien reside en el sector de Paque Norte. Sobrino de la Señorita 
+                Isolina Contreras, Señora Juanita Figueroa y la Señora Rosa Contreras, mujeres que 
+                en vida fueron un gran aporte a nuestra comunidad.</p>
+
+            <p>Mauricio Catoni, es de profesión Ingeniero Comercial, con más de 20 años de experiencia 
+                en el servicio público. Actualmente se encuentra realizando un intenso trabajo comunitario 
+                y social, con los vecinos y vecinas de la comuna, siguiendo los pasos de su tío Raúl Hernandez, 
+                quien fue alcalde de la comuna Ñiquén. Se distingue por su genuina preocupación por las personas 
+                y su firme deseo de contribuir al bienestar de la comunidad. Su espíritu servicial y su profundo 
+                compromiso de ayudar a los demás son evidentes en cada aspecto de su labor.
+
+                Cree apasionadamente que hay un vasto potencial para mejorar la comuna y está convencido 
+                de que es la persona adecuada para llevar a cabo este importante trabajo. Con notables habilidades 
+                en liderazgo y administración, Mauricio cuenta con las competencias necesarias para realizar 
+                una gestión efectiva y cumplir con las verdaderas necesidades de la gente. Su enfoque está 
+                orientado a transformar las aspiraciones de la comunidad en realidades tangibles, asegurando 
+                así un desarrollo integral y sostenido para Ñiquén.</p>
+        </div>
+    </div>
+
+    <div class="franja">
+        Todos por el cambio
+    </div>
 </body>
 </html>
 

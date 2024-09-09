@@ -11,12 +11,46 @@
             height: 100vh;
             border: none;
         }
+
+        /* Estilo para el botón de descarga */
+        #download-button {
+            display: none; /* Inicialmente oculto */
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #download-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <iframe src="Programa_Catoni.pdf" type="application/pdf"></iframe>
+    <!-- Iframe para mostrar el PDF -->
+    <iframe id="pdf-iframe" src="Programa_Catoni.pdf" type="application/pdf" onerror="showDownloadButton()"></iframe>
+
+    <!-- Botón para descargar el PDF -->
+    <button id="download-button" onclick="downloadPDF()">Si no puedes visualizarlo, haz clic aquí</button>
+
+    <script>
+        function showDownloadButton() {
+            // Muestra el botón de descarga si el iframe no puede cargar el PDF
+            document.getElementById('download-button').style.display = 'block';
+        }
+
+        function downloadPDF() {
+            // Inicia la descarga del PDF
+            window.location.href = 'Programa_Catoni.pdf';
+        }
+    </script>
 </body>
 </html>
+
 
 
 

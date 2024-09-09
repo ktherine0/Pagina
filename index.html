@@ -22,6 +22,7 @@
             text-align: center;
             margin-top: 20px;
         }
+
         .download-link {
             display: inline-block;
             padding: 10px 20px;
@@ -32,28 +33,30 @@
             font-weight: bold;
             border: 1px solid #b4c451;
             border-radius: 3px;
-            margin-bottom: 20px; /* Margen debajo del botón para separar del texto */
+            margin-top: 20px; /* Margen encima del botón para separar del logo */
         }
+
         .download-link:hover {
-            background-color: #b4c451;
-            border-color: #b4c451;
+            background-color: #a3b847; /* Color más oscuro al pasar el ratón */
+            border-color: #a3b847;
         }
+
         .logo {
             margin: 20px auto; /* Centra el logo horizontalmente y agrega margen superior e inferior */
             max-width: 300px; /* Ajusta el tamaño máximo del logo */
+            display: block; /* Asegura que el logo esté en su propia línea */
         }
     </style>
 </head>
 <body>
-
-
     <div class="download-container">
+        <!-- Agrega la imagen del logo antes del botón -->
+        <img src="logo2.png" alt="Logo" class="logo">
         <a href="Programa_Catoni.pdf" download="Programa_Catoni.pdf" class="download-link">Pincha aquí para descargar el programa</a>
-    </div>
-
     </div>
 </body>
 </html>
+
 
 
 

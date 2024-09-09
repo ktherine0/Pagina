@@ -18,27 +18,23 @@
             text-align: justify;
         }
 
-        .download-container {
+        .info-container {
             text-align: center;
             margin-top: 20px;
         }
 
-        .download-link {
+        .info-message {
             display: inline-block;
             padding: 10px 20px;
-            text-decoration: none;
             color: #fff;
-            background-color: #b4c451;
+            background-color: #b4c451; /* Fondo verde */
             font-size: 16px;
             font-weight: bold;
             border: 1px solid #b4c451;
             border-radius: 3px;
-            margin-top: 20px; /* Margen encima del botón para separar del logo */
-        }
-
-        .download-link:hover {
-            background-color: #a3b847; /* Color más oscuro al pasar el ratón */
-            border-color: #a3b847;
+            margin-top: 20px; /* Margen encima del mensaje para separar del logo */
+            max-width: 600px; /* Ajusta el tamaño máximo del mensaje */
+            text-align: center; /* Centra el texto dentro del mensaje */
         }
 
         .logo {
@@ -49,13 +45,14 @@
     </style>
 </head>
 <body>
-    <div class="download-container">
-        <!-- Agrega la imagen del logo antes del botón -->
+    <div class="info-container">
+        <!-- Agrega la imagen del logo antes del mensaje -->
         <img src="logo2.png" alt="Logo" class="logo">
-        <a href="Programa_Catoni.pdf" download="Programa_Catoni.pdf" class="download-link">Pincha aquí para descargar el programa</a>
+        <div class="info-message">Programa disponible a partir del viernes 13 de septiembre</div>
     </div>
 </body>
 </html>
+
 
 
 
